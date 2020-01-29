@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <style>
+    html {
+      overflow-y: scroll;
+    }
+
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 18px;
+    }
+
+    .background-image {
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      background-image: url('purple.jpg');
+      width: 100%;
+      height: 100%;
+      -webkit-filter: blur(8px);
+      -moz-filter: blur(8px);
+      -o-filter: blur(8px);
+      -ms-filter: blur(8px);
+      filter: blur(8px);
+      background-size: cover;
+      -moz-background-size: cover;
+    }
+
+    .content {
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+
+    }
+
+    header {
+      background: white;
+      padding: 0.8em 0;
+    }
+
+    header a {
+      color: #5514b4;
+      text-decoration: none;
+    }
+
+    header a.logo {
+      font-weight: bold;
+      color: #5514b4;
+      text-decoration: none;
+      padding: 2em;
+      border-right:1px solid #5514b4;
+    }
+
+    header a.logo:hover {
+      color: #5514b4;
+    }
+
+    nav {
+      float: right;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      display: flex;
+    }
+
+    nav ul li a {
+      padding: 1rem;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      text-decoration: none;
+      color: #5514b4;
+      border-bottom: 4px solid green;
+    }
+
+    .btn-custom,.btn-custom:hover{
+      background-color: #01d7a7;
+      color: white;
+      font-weight: bold;
+      border-radius:6px;
+    }
+
+    .hr-sect {
+      display: flex;
+      flex-basis: 100%;
+      align-items: center;
+      color: rgba(0, 0, 0, 0.35);
+
+    }
+
+    .hr-sect::before,
+    .hr-sect::after {
+      content: "";
+      flex-grow: 1;
+      background: rgba(0, 0, 0, 0.35);
+      height: 1px;
+      font-size: 0px;
+      line-height: 0px;
+
+    }
+
+    .circlearancione {
+      background-color: red;
+      border-color: white;
+      border-radius: 100%;
+      border-width: 5px;
+      height: 25px;
+      width: 25px;
+      line-height: 25px;
+    }
+
+    span {
+      margin-left: 30px;
+    }
+
+    .btn-circle.btn-sm {
+      width: 30px;
+      height: 30px;
+      padding: 6px 0px;
+      border-radius: 15px;
+      font-size: 11px;
+      text-align: center;
+    }
+  
+.btn-outline
+ {
+  border-color: #01d7a7 ;
+  color:#01d7a7;
+  font-weight:bold;
+  border-radius:6px;
+}
+.btn-outline:hover{
+  border-color: #01d7a7 ;
+  background-color:#01d7a7 ;
+  color:white;
+  
+}
+
+  </style>
+
+</head>
+
+<body>
+  <div class="background-image">
+  </div>
+  <div class="content">
+    <header>
+      <div class="container-fluid">
+        <a class="logo">Openreach</a>
+        <nav>
+          <ul>
+            <li><a href=""><i class="fa fa-phone"></i>&nbsp;&nbsp;Contact</a></li>
+
+            <li><a href=""><i class="fa fa-user"></i>&nbsp;&nbsp;Log Out</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div style="padding-top:3%;padding-left:5%;padding-bottom:100%">
+
+      <div class="container-fluid py-3">
+        <div class="row">
+          <div class=" col-sm-6">
+            <!-- form user info -->
+            <div class="card">
+              <div class="card-header" style="background-color: #5514b4;color:white;font-weight:bold">
+                <h4 class="mb-0">Messaging Middleware Service (MMS)</h4>
+              </div>
+              <h5 class="card-title mt-3 mb-0">&emsp;Sign Up</h5>
+              <div class="card-body" style="font-size:17px;">
+                <form class="form" role="form" autocomplete="off">
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label form-control-label">Application Name:</label>
+                    <div class="col-lg-8">
+                      <input class="form-control form-control-sm" type="text" placeholder="ORHUB ESB">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label form-control-label">Application ID:</label>
+                    <div class="col-lg-8">
+                      <input class="form-control form-control-sm" type="text" placeholder="ADP XXXXXX">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label form-control-label">Environments:</label>
+                    <div class="col-lg-8">
+                      <div class="form-check-inline ">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" value="">Development
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" value="">E2E Test
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" value="">Production
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label form-control-label">Primary User EIN:</label>
+                    <div class="col-lg-8">
+                      <input class="form-control form-control-sm" type="text" placeholder="EIN(XXXXXX)">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label form-control-label"></label>
+                    <div class="col-lg-8">
+                      <button type="button"
+                        class="btn btn-custom btn-sm">&emsp;&emsp;&emsp;&emsp;Register&emsp;&emsp;&emsp;&emsp; </button>
+                    </div>
+                  </div>
+                  <div class="hr-sect">
+                    <button class="btn btn-secondary btn-circle btn-sm">or</button> 
+                  </div>
+
+                  <br>
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label form-control-label"></label>
+                    <div class="col-lg-8">
+                      <button type="button"
+                        class="btn btn-sm btn-outline">&emsp;&emsp;&emsp;&emsp;&nbsp;Log In&emsp;&emsp;&emsp;&emsp;&nbsp;
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <br><br><br>
+    </div>
+
+</body>
+
+</html>
