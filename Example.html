@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<style>
+	
+
+.hr-sect {
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.35);
+	margin: 8px 0px;
+}
+.hr-sect::before,
+.hr-sect::after {
+	content: "";
+	flex-grow: 1;
+	background: rgba(0, 0, 0, 0.35);
+	height: 1px;
+	font-size: 0px;
+	line-height: 0px;
+	margin: 0px 8px;
+}
+
+.circlearancione {
+  background-color: red;
+  border-color: white;
+  border-radius: 100%;
+  border-width: 5px;
+  height: 25px;
+  width: 25px;
+  line-height: 25px;
+}
+span {
+  margin-left: 30px;
+}
+
+ .btn-circle.btn-sm { 
+            width: 30px; 
+            height: 30px; 
+            padding: 6px 0px; 
+            border-radius: 15px; 
+            font-size: 11px; 
+            text-align: center; 
+        } 
+		
+.bg-custom {
+    
+	background-color:white;
+}
+.navbar-nav a{
+	font-size:18px;
+	
+	color:purple;
+}
+.navbar-light .navbar-brand{
+	color:purple;
+	font-size:25px;
+	padding-left:10px;
+	letter-spacing:1px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link{
+	color:purple;
+}
+.navbar-light .navbar-nav .nav-link{
+	color:purple;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+	border-bottom:1px solid green;
+	color:purple;
+}
+.navbar-nav{
+	text-align:center;
+}
+
+.nav-link{
+	padding:.2rem 2rem;
+}
+
+
+.background-image {
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      background-image: url('purple.jpg');
+      width: 100%;
+      height: 100%;
+      -webkit-filter: blur(8px);
+      -moz-filter: blur(8px);
+      -o-filter: blur(8px);
+      -ms-filter: blur(8px);
+      filter: blur(8px);
+      background-size: cover;
+      -moz-background-size: cover;
+    }
+
+    .content {
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+
+    }
+
+	</style>
+	
+</head>
+<body>
+<!--<div class="hr-sect">
+ <button  class="btn btn-secondary btn-circle btn-sm">or</button> </div>-->
+<div class="background-image"></div>
+<div class="content">
+ <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+  <a class="navbar-brand" href="#">Openreach</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Conatct </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="border-left: 2px solid purple;" href="#">Sign out</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+</nav>
+
+</div>
+
+</body>
+</html>
