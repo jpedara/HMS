@@ -1,0 +1,22 @@
+<div>
+    <h1>Create Product</h1>
+    <form #f="ngForm" (ngSubmit)="onSubmit(f.value)" >
+        
+            <label>Name</label>
+            <input type="text" [(ngModel)]="productname" name="name" maxlength="20"  placeholder="Enter Product Name">
+        
+        <div class="form-group">
+            <label>Description</label>
+            <textarea name="description" [(ngModel)]="productdescription" rows="3" maxlength="50"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Price</label>
+            <input type="text" name="price" [(ngModel)]="productprice">
+        </div>
+        <div class="form-group">
+            <label>Quantity</label>
+            <input type="text" name="quantity" [(ngModel)]="productquantity" >
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>

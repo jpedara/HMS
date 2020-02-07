@@ -1,0 +1,23 @@
+<div>
+    <button type="button" [routerLink]="['/create/']">Create Product</button>
+</div>
+           
+
+<table>
+    <tr>
+        <th>Product Name</th>
+        <th>Product Description</th>
+        <th>Product Quantity</th>
+        <th>Product Price</th>
+    </tr>
+    <tr *ngFor="let product of products">
+        <td>{{ product.name }}</td>
+        <td>{{ product.price }}</td>
+        <td>{{ product.quantity }}</td>
+        <td>{{ product.price }}</td>
+        <td>
+            <a [routerLink]="['/create/', product.id]">Edit Product</a>&nbsp;&nbsp;&nbsp;
+            <button (click)="deleteProduct(product.id)">Delete Product</button>
+        </td>
+    </tr>
+</table>
