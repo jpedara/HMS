@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .bg-custom{
+		background-color:white;
+	}
+	.navbar .navbar-brand{
+		color: #5514b4;
+		font-weight: bold;
+	}
+	.navbar-nav .nav-item .nav-link:hover{
+		border-bottom:1px solid green;
+	}
+  </style>
+
+</head>
+
+<body style="background-color:#dcdcdc59">
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+	
+	<div class=" container-fluid pl-4  " style="padding-top:7%" >
+
+	<h5 style="font-size:">User Request </h5>
+	
+	
+ 
+    <table class="table table-bordered" style="background-color:#fff;">
+        <thead>
+            <tr>
+                <th>Application Name</th>
+                <th>App ID</th>
+                <th>Admin User</th>
+				<th>Actions</th>
+            </tr>
+        </thead>
+ 
+        <tbody>
+            <tr>
+                <td>xxxxxxxxxxxx</td>
+                <td>App xxxxxxxxxxxx</td>
+                <td>EIN(xxxx)</td>
+				<td style="vertical-align:middle">
+				
+				 <button type="button" class="btn btn-sm btn-outline-success" >&emsp;&emsp;Approve&emsp;&emsp;
+                      </button>
+					  <button type="button" class="btn btn-sm btn-outline-danger">&emsp;&emsp;&nbsp;Reject&nbsp;&emsp;&emsp;
+                      </button>
+					
+				</td>
+            </tr>
+ 
+           
+        </tbody>
+    </table>
+ </div>
+
+     <div class=" container-fluid pl-4 py-4 " >
+
+	<h5>Instances Requests </h5>
+	
+	
+ 
+    <table class="table table-bordered" style="background-color:#fff;"	>
+        <thead>
+            <tr>
+                <th>App ID</th>
+                <th>Environment</th>
+                <th>Request Details</th>
+				<th>Actions</th>
+            </tr>
+        </thead>
+ 
+        <tbody>
+            <tr>
+                <td>App xxxxxx</td>
+                <td>App xxxxxx</td>
+                <td >
+				<ul>
+				<li>100 Que</li>
+				<li>10K Message</li>
+				<li>20 Connection</li>
+				</ul>
+				</td>
+				
+				<td style="vertical-align:middle;width:28%">
+				
+				 <button type="button" class="btn btn-sm btn-outline-success" >&nbsp;RabbitMQ Manager&nbsp;
+                      </button>
+					  <button type="button" class="btn btn-sm btn-outline-danger">&nbsp;Audit Logs&nbsp;
+                      </button>
+					  <button type="button" class="btn btn-sm btn-outline-danger">&nbsp;Add Member&nbsp;
+                      </button>
+					
+				</td>
+            </tr>
+ 
+           
+        </tbody>
+    </table>
+ </div>
+
+    
+</body>
+
+</html>

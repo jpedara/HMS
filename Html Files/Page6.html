@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body style="background-color:#dcdcdc59">
+
+  <!--Navbar Section starts-->
+  <nav class="navbar navbar-expand-md navbar-light bg-custom ">
+    <a class="navbar-brand" style="border-right:1px solid grey">Openreach&emsp;</a>
+    <a class="navbar-text " style="color: #5514b4;">&nbsp;Messaging Middleware Service (MMS)</a>
+    <div style="display:block;float:right;padding-left:45%">
+      Welcome User
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class=" collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class=" navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="page2.html"><i class="fa fa-phone"></i>&nbsp;Contact </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="page2.html"><i class="fa fa-user"></i>&nbsp;Log out</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--navbar section Ends-->
+
+
+
+  <div class=" container-fluid " style="padding-left:4%;padding-top:2%">
+   
+    
+    <h5 class="pb-2">Request New Instance</h5>
+    <div class="card" style="background-color:white;width:100%; ">
+      <div class="card-body" style="font-size: 15px;">
+        <form action="">
+          <div class="row">
+            <div class="col-md-4 ">
+              <div class="form-inline row">
+                <label class="col-md-4 mt-md-2 mt-sm-1 mb-md-5 mb-sm-2">Environment</label>
+                <select class="form-control-sm col-md-6 mt-md-2 mt-sm-1 mb-md-5 mb-sm-2"
+                  style="background-color:#dcdcdc59;">
+                  <option>Development</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+
+            </div>
+          
+            <div class="col-md-4 ">
+              <div class="form-inline row">
+                <label class="col-md-4 mt-md-2 mt-sm-1mb-md-5 mb-sm-2 float-left">Max Queus</label>
+                <select class="form-control-sm col-md-6  mt-md-2 mt-sm-1mb-md-5 mb-sm-2 "
+                  style="background-color:#dcdcdc59;">
+                  <option>100</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 ">
+              <div class="form-inline row">
+                <label class="col-md-4  mb-md-2 mb-sm-2 float-left">Max Messages</label>
+                <select class="form-control-sm col-md-6  mb-md-2 mb-sm-2 " style="background-color:#dcdcdc59;">
+                  <option>1000</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4 ">
+              <div class="form-inline row">
+                <label class="col-md-4  mb-md-2 mb-sm-2 float-left">Max Connections</label>
+                <select class="form-control-sm col-md-6  mb-md-2 mb-sm-2 " style="background-color:#dcdcdc59;">
+                  <option>1000</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+
+            
+          </div>
+        </form>
+      </div>
+
+    </div>
+    <br>
+    <button type="button" class="btn btn-sm btn-success float-right"><b>&nbsp;Request Instance&nbsp;</b>
+    </button>
+  </div>
+
+</body>
+
+</html>

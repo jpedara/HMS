@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!--Background Image-->
+  <div class="background-image"></div>
+  <!--Body Content starts here-->
+  <div class="content">
+
+    <!--Navbar Section starts-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom ">
+      <a class="navbar-brand" style="border-right:1px solid grey">Openreach&emsp;</a>
+      <a class="navbar-text " style="color: #5514b4;">&nbsp;Messaging Middleware Service (MMS)</a>
+      <div style="display:block;float:right;padding-left:45%" >
+        Welcome Admin
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class=" collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class=" navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="page2.html"><i class="fa fa-phone"></i>&nbsp;Contact </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="page2.html"><i class="fa fa-user"></i>&nbsp;Log out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--navbar section Ends-->
+
+    <!--Register form section starts-->
+    <div style="padding-top:3%;">
+      <div class="container py-3">
+        <div class="row">
+          <div class=" col-sm-6">
+            <div class="card">
+              <div class="card-header" style="background-color: #5514b4;color:white;font-weight:bold">
+                <h5 class="mb-0"><b>Messaging Middleware Service (MMS)</b></h5>
+              </div>
+              <h5 class="card-title mt-3 mb-0 ml-4">Sign Up</h5>
+              <div class="card-body" style="font-size:16px;">
+                <form class="form" role="form" autocomplete="off">
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label form-control-label">Application Name:</label>
+                    <div class="col-lg-8">
+                      <input class="form-control form-control-sm" type="text" placeholder="ORHUB ESB">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label form-control-label">Application ID:</label>
+                    <div class="col-lg-8">
+                      <input class="form-control form-control-sm" type="text" placeholder="ADP XXXXXX">
+                    </div>
+                  </div>
+
+                  <div class="form-group row" style="font-size:16px;">
+                    <label class="col-lg-4 col-form-label form-control-label">Environments:</label>
+                    <div class="col-lg-8">
+                      <div class="form-check-inline ">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" value="">Development
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" value="">E2E Test
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" value="">Production
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label form-control-label">Primary User EIN:</label>
+                    <div class="col-lg-8">
+                      <input class="form-control form-control-sm" type="text" placeholder="EIN(xxxxxxxx)">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label form-control-label"></label>
+                    <div class="col-lg-8">
+                      <button type="button"
+                        class="btn btn-custom btn-sm">&emsp;&emsp;&emsp;&emsp;Register&emsp;&emsp;&emsp;&emsp; </button>
+                    </div>
+                  </div>
+                  <div class="hr-sect">
+                    <button class="btn btn-secondary btn-circle btn-sm">or</button>
+                  </div>
+
+                  <br>
+                  <div class="form-group row">
+                    <label class="col-lg-4 col-form-label form-control-label"></label>
+                    <div class="col-lg-8">
+                      <button type="button" class="btn btn-sm btn-outline">&emsp;&emsp;&emsp;&emsp;&nbsp;Log
+                        In&emsp;&emsp;&emsp;&emsp;&nbsp;
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Register form sections ends-->
+
+  </div>
+  <!-- Content section ends-->
+</body>
+
+</html>
